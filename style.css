@@ -824,9 +824,9 @@ a.contact:hover {
         margin-top: 1em;
     }
 
-    .home-content h2.enterYourName {
+    /* .home-content h2.enterYourName {
         font-size: 24px;
-    }
+    } */
 
     .home-content p {
         font-size: 14px;
@@ -1109,10 +1109,10 @@ a.contact:hover {
         margin-bottom: 0;
     }
 
-    .home-content h2.enterYourName.violet_large,
+    /* .home-content h2.enterYourName.violet_large,
     .choice_title.violet_large {
         font-size: 40px;
-    }
+    } */
 
     .home-content .saveYourName #username {
         width: 376px;
