@@ -72,6 +72,18 @@ function updateQuizTitle() {
 //     yourQuiz.innerHTML = `<h2>Your psychology Quiz is ready for you!</h2>
 //   `
 //  })
+btnSaveName.onclick = () => {
+   
+    if(username.value !== ''){
+       saveYourName.innerHTML = `<h2 >Hi ${username.value}!</h2> <br>`;
+    }
+    else{
+enterYourName.classList.add('violet_large');
+
+    }
+    
+    }
+
 startBtn.onclick = () => {
     
     if(username.value !== '' && saveYourName.innerHTML === `<h2>Hi ${username.value}!</h2> <br>` && choiceTitle.innerHTML === ''){
@@ -79,16 +91,17 @@ startBtn.onclick = () => {
     main.classList.add('active');
     }
     else{
-enterYourName.classList.add('violet_large');
-enterYourName.classList.remove('red_large');
+      choiceTitle.classList.add('violet_large');
+enterYourName.classList.add('red_large');
+// enterYourName.classList.remove('red_large');
     }
-     if( choiceTitle.innerHTML !== ''){
-        choiceTitle.classList.add('violet_large');
+    //  if( choiceTitle.innerHTML !== ''){
+    //     choiceTitle.classList.add('violet_large');
        
 
-     }
+    //  }
+    }
 
-}
 exitBtn.onclick = () => {
     popupInfo.classList.remove('active');
      main.classList.remove('active');
@@ -263,17 +276,7 @@ function headerScore(){
 
  }  
 
- btnSaveName.onclick = () => {
-   
-    if(username.value !== ''){
-       saveYourName.innerHTML = `<h2 >Hi ${username.value}!</h2> <br>`;
-    }
-    else{
-       enterYourName.classList.add('red_large'); 
-       enterYourName.classList.remove('violet_large'); 
-    }
-    
-    }
+ 
  
 
         

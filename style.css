@@ -1110,8 +1110,7 @@ a.contact:hover {
     }
 
     .home-content h2.enterYourName.violet_large,
-    .choice_title.violet_large,
-    .home-content h2.enterYourName.red_large {
+    .choice_title.violet_large {
         font-size: 40px;
     }
 
@@ -1195,19 +1194,20 @@ a.contact:hover {
         letter-spacing: normal;
     }
 
+    /* 
     .home-content h2.enterYourName.violet_large,
     .choice_title.violet_large,
     .home-content h2.enterYourName.red_large {
         font-size: 25px;
-    }
+    } */
 
-    /* .enterYourName.red_large {
+    /* .home-content h2.enterYourName.red_large {
         color: red;
     } */
 
-    .home-content .saveYourName .enterYourName {
+    /* .home-content .saveYourName .enterYourName {
         font-size: 22px;
-    }
+    } */
 
     .home-content .saveYourName #username {
         width: 160px;
