@@ -30,7 +30,8 @@ const quizTitleElement = document.querySelector('.quizTitle');
 const physicsBtn = document.getElementById('physics');
 const psychologyBtn = document.getElementById('psychology');
 const itBtn = document.getElementById('IT');
-
+const home = document.getElementsByClassName('home');
+// home.style.overflow = "hidden";
 document.getElementById('physics').addEventListener('click', function() {
   currentQuestions = questionsPhysics;
 //   yourChoice.innerHTML = `<h2>Your Physics Quiz is ready for you!</h2>
@@ -41,7 +42,7 @@ document.getElementById('physics').addEventListener('click', function() {
 quizChoice.innerHTML = `<h2 class = 'bigger'>Physics Quiz is ready for you!</h2>`
   choiceTitle.innerHTML = '';
 });
-
+document.body.style.overflow = "hidden";
 document.getElementById('IT').addEventListener('click', function() {
   currentQuestions = questionsIT; // Ваш оригинальный набор IT-вопросов
 //   startQuiz();
@@ -71,7 +72,8 @@ function updateQuizTitle() {
 //  {
 //     yourQuiz.innerHTML = `<h2>Your psychology Quiz is ready for you!</h2>
 //   `
-//  })
+//  
+
 btnSaveName.onclick = () => {
    
     if(username.value !== ''){
