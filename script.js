@@ -43,22 +43,22 @@ const blockScroll = (e) => {
 };
 
 // All possible events of scrolling
-['wheel', 'scroll', 'touchmove', 'keydown'].forEach(event => {
-  window.addEventListener(event, blockScroll, { passive: false });
-});
+// ['wheel', 'scroll', 'touchmove', 'keydown'].forEach(event => {
+//   window.addEventListener(event, blockScroll, { passive: false });
+// });
 
 // disabling of arrows and PageUp/Down keys 
-// ddocument.addEventListener('keydown', (e) => {
-//   const navigationKeys = [
-//     'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
-//     'PageUp', 'PageDown', 'Home', 'End', 'Space'
-//   ];
+document.addEventListener('keydown', (e) => {
+  const navigationKeys = [
+    'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+    'PageUp', 'PageDown', 'Home', 'End', 'Space'
+  ];
   
-//   if (navigationKeys.includes(e.key)) {
-//     e.preventDefault();
-//     e.stopPropagation();
-//   }
-// });
+  if (navigationKeys.includes(e.key)) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+});
 
 
 document.getElementById('physics').addEventListener('click', function() {
