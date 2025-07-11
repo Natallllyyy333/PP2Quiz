@@ -15,12 +15,13 @@ const username = document.getElementById('username');
  const btnSaveName = document.querySelector('.btnSaveName');
 
   const saveYourName = document.querySelector('.saveYourName');
-  const enterYourName = document.querySelector('.enterYourName');
+  let enterYourName = document.querySelector('.enterYourName');
   const quizChoice = document.querySelector('.quizChoice');
   const yourChoice = document.querySelector('.yourChoice');
   const choiceTitle = document.querySelector('.choice_title');
   const bigger = document.getElementsByClassName('bigger');
   const quizTitle = document.getElementsByClassName('quizTitle');
+  let uname = document.querySelector('.uname');
   
 //   const highScoresNavbarLink = document.querySelector('.highScoresNavbarLink');
 let currentQuestions = [];
@@ -31,7 +32,35 @@ const physicsBtn = document.getElementById('physics');
 const psychologyBtn = document.getElementById('psychology');
 const itBtn = document.getElementById('IT');
 const home = document.getElementsByClassName('home');
-// home.style.overflow = "hidden";
+
+window.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
+window.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+
+const blockScroll = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+};
+
+// All possible events of scrolling
+['wheel', 'scroll', 'touchmove', 'keydown'].forEach(event => {
+  window.addEventListener(event, blockScroll, { passive: false });
+});
+
+// disabling of arrows and PageUp/Down keys 
+// ddocument.addEventListener('keydown', (e) => {
+//   const navigationKeys = [
+//     'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+//     'PageUp', 'PageDown', 'Home', 'End', 'Space'
+//   ];
+  
+//   if (navigationKeys.includes(e.key)) {
+//     e.preventDefault();
+//     e.stopPropagation();
+//   }
+// });
+
+
 document.getElementById('physics').addEventListener('click', function() {
   currentQuestions = questionsPhysics;
 //   yourChoice.innerHTML = `<h2>Your Physics Quiz is ready for you!</h2>
@@ -42,7 +71,7 @@ document.getElementById('physics').addEventListener('click', function() {
 quizChoice.innerHTML = `<h2 class = 'bigger'>Physics Quiz is ready for you!</h2>`
   choiceTitle.innerHTML = '';
 });
-document.body.style.overflow = "hidden";
+// document.body.style.overflow = "hidden";
 document.getElementById('IT').addEventListener('click', function() {
   currentQuestions = questionsIT; // Ваш оригинальный набор IT-вопросов
 //   startQuiz();
@@ -77,15 +106,16 @@ function updateQuizTitle() {
 btnSaveName.onclick = () => {
    
     if(username.value !== ''){
-       saveYourName.innerHTML = `<h2 >Hi ${username.value}!</h2> <br>`;
+      saveYourName.innerHTML = `<h2 >Hi ${username.value}!</h2> <br>`;
+       
     }
-    else{
-enterYourName.classList.add('violet_large');
-
-    }
+   else{
+    // uname.innerHTML = `<div style="background: 'green'"><h2 class="enterYourName red">Enter your name below</h2></div>`;
+enterYourName.classList.add('red');
+    // enterYourName.innerHTML = `<h2 class="enterYourName red">Enter your name below</h2> <br>`
     
     }
-
+}
 startBtn.onclick = () => {
     
     if(username.value !== '' && saveYourName.innerHTML === `<h2>Hi ${username.value}!</h2> <br>` && choiceTitle.innerHTML === ''){
@@ -94,15 +124,14 @@ startBtn.onclick = () => {
     }
     else{
       choiceTitle.classList.add('violet_large');
-enterYourName.classList.add('red_large');
-// enterYourName.classList.remove('red_large');
+      enterYourName.classList.add('red_large');
     }
     //  if( choiceTitle.innerHTML !== ''){
     //     choiceTitle.classList.add('violet_large');
        
 
-    //  }
-    }
+     }
+    
 
 exitBtn.onclick = () => {
     popupInfo.classList.remove('active');
