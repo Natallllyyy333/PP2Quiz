@@ -33,9 +33,9 @@
 
         </nav>
     </header>
-    <div class="contact-form-container">
+    <!-- <div class="contact-form-container">
         <h1>Questions? - Send us a message.</h1>
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
             <div class="form-group">
                 <input type="text" id="fullName" class="form-input" placeholder=" " required />
                 <label for="fullName" class="form-label">Full Name</label>
@@ -49,11 +49,60 @@
                 <textarea id="message" class="form-input textarea" placeholder=" " required></textarea>
                 <label for="message" class="form-label">Your Message</label>
             </div>
-            <button type="button" class="submit-btn" onclick="SendMail()"><span>Send Message</span>
+            <button type="submit" id="submitBtn" class="submit-btn" onclick="SendMail()"><span>Send Message</span>
                 <i class="fa-solid fa-paper-plane"></i>
             </button>
         </form>
+    </div> -->
+
+    <div class="contact-form-container" id="containner">
+
+        <h1>Questions? - Send us a message.</h1>
+        <form id="form" class="contact-form">
+            <!-- <div class="field form-group">
+
+                <input type="text" id="title" name="title" class="form-input" name="title" placeholder=" " required>
+                <label for="title" class="form-label">title</label>
+
+            </div> -->
+
+            <div class="field form-group">
+
+                <input type="text" id="name" name="name" class="form-input" placeholder=" " autocomplete="given-name"
+                    required>
+                <label for="name" class="form-label">Full Name</label>
+
+                <!-- <label for="name">name</label>
+                <input type="text" name="name" id="name"> -->
+            </div>
+
+            <div class="field form-group">
+                <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                <label for="email" class="form-label">Email Address</label>
+
+                <!-- <label for="email">email</label>
+                <input type="text" name="email" id="email"> -->
+            </div>
+            <!-- <div class="field form-group">
+                <label for="time">time</label>
+                <input type="text" name="time" id="time">
+            </div> -->
+            <div class="field form-group">
+                <textarea id="message" name="message" class="form-input textarea" placeholder=" " required></textarea>
+                <label for="message" class="form-label">Your Message</label>
+
+                <!-- <label for="message">message</label>
+                <input type="text" name="message" id="message"> -->
+            </div>
+
+            <button type="submit" id="button" class="submit-btn"><span id="buttonValue">Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <!-- <input type="submit" id="button" value="Send Email "> -->
+        </form>
     </div>
+    <!-- <div class="contact-form-container cover"> </div> -->
 </body>
 
 </html>
