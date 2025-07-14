@@ -4,10 +4,10 @@ let questionsIT = [
         question: "What does HTML stand for?",
         answer: "C. Hyper Text Markup Language",
         options: [
-            "A. Hyper Type Multi Language",
-            "B. Hyper Text Multiple Language",
+            "A. Hyper Type Multi Loop",
+            "B. Hyper Text Multiple Line",
             "C. Hyper Text Markup Language",
-            "D. Hyper Text Multi Language",
+            "D. Hyper Text Multi Link",
             
         ]
 
@@ -33,7 +33,7 @@ let questionsIT = [
              "A. Hypertext Preprocessor",
             "B. Hometext Programming",
             "C. Hypertext Preprogramming",
-            "D. Programming Hypertext Preprocessor"
+            "D. Programming Hyper Preprocessor"
 
         ]
 
@@ -43,9 +43,9 @@ let questionsIT = [
         question: "What does SQL stand for?",
         answer:"D. Structured Query Language",
         options: [
-            "A. Strength Query Language",
-            "B. Stylesheet Query Language",
-            "C. Science Question Language",
+            "A. Strength Query Line",
+            "B. Stylesheet Query Lens",
+            "C. Science Question Link",
             "D. Structured Query Language"
 
         ]
