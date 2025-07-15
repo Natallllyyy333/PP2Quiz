@@ -895,7 +895,7 @@ a.contact:hover {
 
     .contact-form {
 
-        gap: 1.5rem;
+        gap: 1.3rem;
     }
 
     .contact-form-container {
@@ -1550,7 +1550,7 @@ a.contact:hover {
     .contact-form-container {
         padding: 0.5rem;
         max-width: 350px;
-        margin: 4rem auto 0.5rem;
+        margin: 3rem auto 0.5rem;
     }
 
 }
