@@ -76,31 +76,31 @@ Quiz Website is a classic Quiz game with a chouice of 3 quizes: IT, Physics and 
 
 ### Site Owner Stories
 7. As a site owner, I want users to be able to contact us or make suggestions for new questions or quizes .
-8. As a site owner, I want users to be able to find us on social media.
 
 ## Design
 
 ### Design Choices
-The game was designed to have a calming and relaxing effect on the user. Instead of the classic stick figure being hanged, the game uses flowers that lose petals. By doing so the negative connotation of the game being morbid or offensive is removed.
+The game was designed to have an engaging effect on the user. The idea was to let the user check their common knowledge by playing a quiz game on 3 subjects: IT, Physics and Psychology.
 
 ### Colour
-The color palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
+The color palette was chosen to match violet and purple colour of the background. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
 
 <details><summary>Colour palette</summary>
 <img src="docs/features/color-palette.jpg">
 </details>
 
 ### Fonts
-For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping from one line to the next and back depending on the guessed letter. 
+For the fonts, Poppins and Impact, Gill Sans font stack was used. 
 
 ### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees a screen with the option to choose a difficulty for the game. The website consists of three separate pages:
+The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees a screen with the option to choose a subject for the quiz game. The website consists of three separate pages:
 
 - A homepage with 4 different views:
-    - one for selecting a difficulty
+    - one for selecting a subject
+    - one for the Quiz Guide
     - one for playing the game
-    - one that is shown after a correct guess
-    - one that is shown after the user runs out of moves
+    - one that shows the score when the quiz is over
+    - one that is shown after the user presses the button High Scores to see the 3 latest best results of the game
 - A contact form
 - A 404 page
 

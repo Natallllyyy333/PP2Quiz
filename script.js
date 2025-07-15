@@ -283,7 +283,7 @@ function headerScore(){
     resultBox.classList.add('active');
 
     const scoreText = document.querySelector('.score-text');
-    scoreText.textContent = `${username.value}, Your Score ${userScore} out of ${currentQuestions.length}`;
+    scoreText.innerHTML = `<p class = 'center'>${username.value}, <br> Your Score is <br> ${userScore} out of ${currentQuestions.length}</p>`;
     const circularProgress = document.querySelector('.circular-progress');
     const progressValue = document.querySelector('.progress-value');
     let progressStartValue = -1;

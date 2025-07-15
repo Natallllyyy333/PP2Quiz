@@ -14,10 +14,10 @@ let questionsPhysics = [
     },
     {
         numb: 2,
-         question: "Which of the following best describes gravity?",
-        answer:"A. A force that pulls objects toward each other",
+         question: "Which one best describes gravity?",
+        answer:"A. A force that pulls objects to each other",
         options: [
-            "A. A force that pulls objects toward each other",
+            "A. A force that pulls objects to each other",
             "B. A type of energy stored in objects",
             "C. The resistance of an object to motion",
             "D. A measure of how fast an object moves"
