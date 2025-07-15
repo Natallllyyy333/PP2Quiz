@@ -8,7 +8,7 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
-const hiName = document.querySelector('.hiName');
+// const hiName = document.querySelector('.hiName');
 
 
 const username = document.getElementById('username');
@@ -17,30 +17,30 @@ const username = document.getElementById('username');
   const saveYourName = document.querySelector('.saveYourName');
   let enterYourName = document.querySelector('.enterYourName');
   const quizChoice = document.querySelector('.quizChoice');
-  const yourChoice = document.querySelector('.yourChoice');
+  // const yourChoice = document.querySelector('.yourChoice');
   const choiceTitle = document.querySelector('.choice_title');
-  const bigger = document.getElementsByClassName('bigger');
+  // const bigger = document.getElementsByClassName('bigger');
   const quizTitle = document.getElementsByClassName('quizTitle');
-  let uname = document.querySelector('.uname');
+  // let uname = document.querySelector('.uname');
   
 //   const highScoresNavbarLink = document.querySelector('.highScoresNavbarLink');
 let currentQuestions = [];
 let quizTitleText = '';
 const quizTitleElement = document.querySelector('.quizTitle');
 
-const physicsBtn = document.getElementById('physics');
-const psychologyBtn = document.getElementById('psychology');
+// const physicsBtn = document.getElementById('physics');
+// const psychologyBtn = document.getElementById('psychology');
 const itBtn = document.getElementById('IT');
-const home = document.getElementsByClassName('home');
+// const home = document.getElementsByClassName('home');
 
 window.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
 window.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
 
-const blockScroll = (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  return false;
-};
+// const blockScroll = (e) => {
+//   e.preventDefault();
+//   e.stopPropagation();
+//   return false;
+// };
 
 // All possible events of scrolling
 // ['wheel', 'scroll', 'touchmove', 'keydown'].forEach(event => {
@@ -68,7 +68,7 @@ document.getElementById('physics').addEventListener('click', function() {
 //   startQuiz();
  quizTitleText = "Physics Quiz";
   updateQuizTitle();
-quizChoice.innerHTML = `<h2 class = 'bigger'>Physics Quiz is ready for you!</h2>`
+quizChoice.innerHTML = `<h2 class = 'bigger'>Physics Quiz is ready for you!</h2>`;
   choiceTitle.innerHTML = '';
 });
 // document.body.style.overflow = "hidden";
@@ -79,9 +79,9 @@ document.getElementById('IT').addEventListener('click', function() {
 //   `
 quizTitleText =  `Basics of IT`;
 updateQuizTitle();
-quizChoice.innerHTML = `<h2 class = 'bigger'>IT Quiz is ready for you!</h2>;`
+quizChoice.innerHTML = `<h2 class = 'bigger'>IT Quiz is ready for you!</h2>;`;
 choiceTitle.innerHTML = '';
-})
+});
 document.getElementById('psychology').addEventListener('click', function() {
   currentQuestions = questionsPsychology;
 //    yourQuiz.innerHTML = `<h2>Your Psychology Quiz is ready for you!</h2>
@@ -89,7 +89,7 @@ document.getElementById('psychology').addEventListener('click', function() {
 //   startQuiz();
 quizTitleText = "Psychology Quiz";
   updateQuizTitle();
-quizTitle.innerHTML = `<h1>Psychology Quiz</h1>` 
+quizTitle.innerHTML = `<h1>Psychology Quiz</h1>`;
 quizChoice.innerHTML = `<h2 class = 'bigger'>Psychology Quiz is ready for you!</h2>`;
 choiceTitle.innerHTML = '';
 });
@@ -115,7 +115,7 @@ enterYourName.classList.add('red');
     // enterYourName.innerHTML = `<h2 class="enterYourName red">Enter your name below</h2> <br>`
     
     }
-}
+};
 startBtn.onclick = () => {
     
     if(username.value !== '' && saveYourName.innerHTML === `<h2>Hi ${username.value}!</h2> <br>` && choiceTitle.innerHTML === ''){
@@ -130,13 +130,13 @@ startBtn.onclick = () => {
     //     choiceTitle.classList.add('violet_large');
        
 
-     }
+     };
     
 
 exitBtn.onclick = () => {
     popupInfo.classList.remove('active');
      main.classList.remove('active');
-}
+};
 
 continueBtn.onclick = () => {
    quizSection.classList.add('active');
@@ -147,7 +147,7 @@ continueBtn.onclick = () => {
      showQuestions(0);
      questionCounter(1);
      headerScore();
-}
+};
 
 tryAgainBtn.onclick = () => {
         quizBox.classList.add('active');
@@ -161,7 +161,7 @@ tryAgainBtn.onclick = () => {
 questionCounter(questionNumb);
 headerScore();
 
-}
+};
 
 goHomeBtn.onclick = () => {
         quizSection.classList.remove('active');
@@ -176,7 +176,7 @@ questionCounter(questionNumb);
 headerScore();
 location.reload(); 
 
-}
+};
 
 let questionCount = 0;
 let questionNumb = 1;
@@ -199,12 +199,12 @@ nextBtn.onclick = () => {
    
     showResultBox();
  }
-}
+};
 
 
 
 const optionList = document.querySelector('.option-list');
-const icon = document.getElementsByClassName('icon');
+// const icon = document.getElementsByClassName('icon');
 //getting questions and options from array
 function showQuestions(index) {
     const questionText = document.querySelector(".question-text");
@@ -406,7 +406,7 @@ function addItemToPage(item) {
 // Вешаем обработчики событий
 
 
-itBtn.addEventListener('click', () => {
-  startQuiz('general'); // Используем 'general' для IT-викторины
-});
+// itBtn.addEventListener('click', () => {
+//   startQuiz('general'); // Используем 'general' для IT-викторины
+// });
 

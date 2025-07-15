@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     emailjs.init('CZBD7pmlWJlOCL1-T'); // Замените на ваш userID
 
