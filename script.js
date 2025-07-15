@@ -406,7 +406,7 @@ function addItemToPage(item) {
 // Вешаем обработчики событий
 
 
-// itBtn.addEventListener('click', () => {
-//   startQuiz('general'); // Используем 'general' для IT-викторины
-// });
+itBtn.addEventListener('click', () => {
+  startQuiz('general'); // Используем 'general' для IT-викторины
+});
 
