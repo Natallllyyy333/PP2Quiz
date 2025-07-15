@@ -675,6 +675,7 @@ h2 {
 
 .highScores .center {
     text-align: center;
+    display: block;
 
 }
 
