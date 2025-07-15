@@ -673,6 +673,11 @@ h2 {
 
 }
 
+.highScores .center {
+    text-align: center;
+
+}
+
 #highScoresList li {
 
     box-shadow: 0 0 25px #c40094;
