@@ -141,7 +141,7 @@ h2 {
     color: rgb(61, 3, 61);
     font-size: 35px;
     font-weight: 800;
-    font-style: bold;
+    font-style: oblique;
     text-shadow: 3px 3px 3px #fff;
     transition: .3s ease;
 }
@@ -224,7 +224,7 @@ h2 {
     color: rgb(61, 3, 61);
     font-size: 30px;
     font-weight: 800;
-    font-style: bold;
+    font-style: oblique;
     text-shadow: 3px 3px 3px #fff;
     transition: .3s ease;
 }
@@ -233,7 +233,7 @@ h2 {
     color: red;
     font-size: 28px;
     font-weight: 800;
-    font-style: bold;
+    font-style: oblique;
     text-shadow: 3px 3px 3px #fff;
     transition: .3s ease;
 }
@@ -338,7 +338,7 @@ h2 {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
-    font-size: 600;
+    font-weight: 600;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     transition: .5s;
@@ -1006,50 +1006,51 @@ a.contact:hover {
 
     .result-box .progress-value {
         font-size: 1em;
+    }
 
-        .quiz-box .quiz-footer {
-            padding-top: 10px;
-            margin-top: 3px;
-        }
+    .quiz-box .quiz-footer {
+        padding-top: 10px;
+        margin-top: 3px;
+    }
 
-        .highScores h2 {
-            font-size: 17px;
-        }
+    .highScores h2 {
+        font-size: 17px;
+    }
 
-        .quiz-section .result-box {
-            padding: 2px;
+    .quiz-section .result-box {
+        padding: 2px;
 
-        }
+    }
 
-        /* .contact-form {
+    /* .contact-form {
 
         gap: 0.5rem;
     } */
 
-        .contact-form-container {
-            max-width: 704px;
-            margin: 4rem auto 2rem;
-            font-size: 14px;
-            padding: .5rem;
-        }
-
-        .contact-form-container .contact-form {
-            font-size: 14px;
-        }
-
-        .contact-form-container h1 {
-            font-size: 17px;
-            margin: .5rem 3rem 1em;
-        }
-
-        .contact-form .form-group {
-            font-size: 14px;
-        }
-
-        .submit-btn {
-            padding: .5rem 2rem;
-        }
+    .contact-form-container {
+        max-width: 704px;
+        margin: 4rem auto 2rem;
+        font-size: 14px;
+        padding: .5rem;
     }
+
+    .contact-form-container .contact-form {
+        font-size: 14px;
+    }
+
+    .contact-form-container h1 {
+        font-size: 17px;
+        margin: .5rem 3rem 1em;
+    }
+
+    .contact-form .form-group {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: .5rem 2rem;
+    }
+
 }
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
