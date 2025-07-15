@@ -285,3 +285,9 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <details><summary>questionsPsychology.js</summary>
 <img src="./docs/validation/js-validation-questionsPsychology.jpg">
 </details>
+<details><summary>questionsPhysics.js</summary>
+<img src="./docs/validation/js-validation-questionsPhysics.jpg">
+</details>
+<details><summary>questions.js</summary>
+<img src="./docs/validation/js-validation-questions.jpg">
+</details>
