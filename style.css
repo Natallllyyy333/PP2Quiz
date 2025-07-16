@@ -650,11 +650,11 @@ h2 {
 
 .buttons button:nth-child(2) {
     background: transparent;
-    color: #c40094;
+    color: #FF57D5;
 }
 
 .buttons button:nth-child(2):hover {
-    background: #c40094;
+    background: #FF57D5;
     color: #fff;
 }
 
