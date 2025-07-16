@@ -1145,6 +1145,13 @@ a.contact:hover {
 }
 
 @media screen and (max-width: 992px) {
+    .main {
+        min-height: 100vh;
+        background: url('./images/output_65.webp') no-repeat center center/cover;
+        pointer-events: auto;
+        transition: .3s ease;
+    }
+
     .header {
         width: 100%;
     }
@@ -1258,6 +1265,14 @@ a.contact:hover {
 /* } */
 
 @media screen and (max-width: 768px) {
+
+    .main {
+        min-height: 100vh;
+        background: url('./images/output_65.webp') no-repeat center center/cover;
+        pointer-events: auto;
+        transition: .3s ease;
+    }
+
     .header {
         width: 50%;
         padding: 20px 3%;
@@ -1350,6 +1365,14 @@ a.contact:hover {
 }
 
 @media (max-width: 576px) {
+
+    .main {
+        min-height: 100vh;
+        background: url('./images/output_60.webp') no-repeat center center/cover;
+        pointer-events: auto;
+        transition: .3s ease;
+    }
+
     .header {
 
         padding: 15px 4%;
