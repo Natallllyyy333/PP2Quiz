@@ -304,3 +304,28 @@ The WAVE WebAIM web accessibility evaluation tool was used to ensure the website
 <!-- <details><summary>404</summary>
 <img src="./docs/validation/accessibility-evaluation-404.jpg">
 </details> -->
+
+### Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+
+<details><summary>Home</summary>
+<img src="./docs/validation/performance-lighthouse-index_mobile.jpg">
+<img src="./docs/validation/performance-lighthouse-index_desktop.jpg">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/validation/performance-lighthouse-contact.jpg">
+</details>
+<!-- <details><summary>404</summary>
+<img src="docs/validation/performance-lighthouse-404.jpg">
+</details> -->
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+
+- Lenovo Yoga 2 Pro (both in pc and tablet mode)
+- Honor 20 pro
+- Xiaomi Redmi Note 7
+
+In addition, the website was tested using the Google Chrome Developer Tools Device Toggling option for all available device options.
+
+### Browser Compatability
