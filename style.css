@@ -1266,12 +1266,12 @@ a.contact:hover {
 
 @media screen and (max-width: 768px) {
 
-    /* .main {
+    .main {
         min-height: 100vh;
-        background: url('./images/output_60.webp') no-repeat center center/cover;
+        background: url('./images/output_40.webp') no-repeat center center/cover;
         pointer-events: auto;
         transition: .3s ease;
-    } */
+    }
 
     .header {
         width: 50%;
