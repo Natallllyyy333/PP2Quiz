@@ -820,7 +820,7 @@ a.contact:hover {
     position: absolute;
     left: 1rem;
     top: 1rem;
-    color: #777;
+    color: #4a6baf;
     pointer-events: none;
     transition: all 0.3s ease;
     transform-origin: left center;
