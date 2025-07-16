@@ -291,3 +291,16 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <details><summary>questions.js</summary>
 <img src="./docs/validation/js-validation-questions.jpg">
 </details>
+
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
+
+<details><summary>Home</summary>
+<img src="./docs/validation/accessibility-evaluation-index.jpg">
+</details>
+<details><summary>Contact</summary>
+<img src="./docs/validation/accessibility-evaluation-contact_page.jpg">
+</details>
+<!-- <details><summary>404</summary>
+<img src="./docs/validation/accessibility-evaluation-404.jpg">
+</details> -->
