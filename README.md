@@ -67,15 +67,17 @@ Quiz Website is a classic Quiz game with a chouice of 3 quizes: IT, Physics and 
 - Accessibility
 
 ### User Stories
-1. As a user, I want to be able to pick a quiz topic.
-2. As a user, I want to test my general knowledge by answering different questions
-3. As a user, I want to be able to pick the answer by clicking the mouse
-4. As a user, I want to know what the correct answer was in case I don't guess it correctly
-5. As a user, I want feedback on my correct answers
-6. As a user, I want confirmation that my feedback was sent
+1. As a user, I want to be able to create my name and enter it in the game.
+2. As a user, I want to be able to pick a subject for the game.
+3. As a user, I want to be able to read the quide for the game before playing.
+4. As a user, I want to test my general knowledge by answering different questions.
+5. As a user, I want to be able to exit before the start of the game back to the Start Screen.
+6. As a user, I want to be able to pick the option of the answers by clicking the mouse and see if my answer was right or wrong.
+7. As a user, I want to know what the correct answer was in case I don't guess it correctly.
+8. As a user, I want to be able to go to the next question of the quiz.
 
 ### Site Owner Stories
-7. As a site owner, I want users to be able to contact us or make suggestions for new questions or quizes .
+9. As a user, I want to know my score at the end of the game.
 
 ## Design
 
@@ -202,7 +204,7 @@ The site consists of two pages and nine features
     
 
 <details><summary>Game screen</summary>
-<img src="docs/features/feature-game-screen.jpg">
+<img src="./docs/features/feature-game-screen.jpg">
 </details>
 
 ### Game Score screen
@@ -497,8 +499,7 @@ The website was tested on the following browsers:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | User's name and email aren't sent via the contact form to website owner's email| Add 'document.getElementById('form').addEventListener('submit', function(event) {})' function |
-| The start screen, the game screen and the score screen is moved up, down, right and left with scrolling, sliding and arrow, pageUp/pageDown buttons on the keyboard | add  e.preventDefault(), e.stopPropagation() for 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
-    'PageUp', 'PageDown', 'Home', 'End', 'Space' |
+| The start screen, the game screen and the score screen is moved up, down, right and left with scrolling, sliding and arrow, pageUp/pageDown buttons on the keyboard | add  e.preventDefault(), e.stopPropagation() for 'ArrowUp','ArrowDown', 'ArrowLeft', 'ArrowRight','PageUp', 'PageDown', 'Home', 'End', 'Space' |
 | The contact page has overflow on smaller screen sizes | Change padding and margin sizes for smaller screens |
 
 ## Deployment
