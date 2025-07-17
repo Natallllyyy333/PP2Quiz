@@ -329,3 +329,151 @@ The website was tested on the following devices:
 In addition, the website was tested using the Google Chrome Developer Tools Device Toggling option for all available device options.
 
 ### Browser Compatability
+The website was tested on the following browsers:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+### Testing user stories
+
+1. As a user, I want to be able to create my name and enter it in the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start screen | Type the name into the username input and click the 'Save' button | The start screen shows the greeting with the user's name | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-1-a.jpg">
+<img src="./docs/user-story-testing/user-story-1-b.jpg">
+</details>
+
+2. As a user, I want to be able to pick a subject for the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start screen | Click on the desired subject button|The start screen shows a notification with the picked subject The games screen loads with the desired subject | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-2-a.jpg">
+<img src="./docs/user-story-testing/user-story-2-b.jpg">
+</details>
+3. As a user, I want to be able to read the quide for the game before playing
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start screen | Click on the 'Start Quiz' button|The Guide screen loads with the text of the Guide | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-3-a.jpg">
+<img src="./docs/user-story-testing/user-story-3-b.jpg">
+</details>
+
+4. As a user, I want to test my general knowledge by answering different questions
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Guide screen | Click the 'Start Quiz' button to start the game | The Quiz Game screen loads  | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-3-b.jpg">
+<img src="./docs/user-story-testing/user-story-3-c.jpg">
+</details>
+5. As a user, I want to be able to exit before the start of the game back to the Start Screen
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Guide screen | Click the 'Exit Quiz' button to exit the game | The Start screen loads  | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-3-b.jpg">
+<img src="./docs/user-story-testing/user-story-2-b.jpg">
+</details>
+
+6. As a user, I want to be able to pick the option of the answers by clicking the mouse and see if my answer was right or wrong
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game screen | Click an option button | The used answer change color to green if it is correct or to red if it is wrong. Another option can't be picked a second time | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-6-a.jpg">
+</details>
+
+7. As a user, I want to know what the correct answer was in case I don't guess it correctly
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game screen | Click an option button | If the answer was wrong, the right answer turns to green to be shown to the user. | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-6-a.jpg">
+</details>
+
+8. As a user, I want to be able to go to the next question of the quiz
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game screen | Click the 'Next' button | The screen of the next question of the quiz loads. | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-8-a.jpg">
+<img src="./docs/user-story-testing/user-story-8-b.jpg">
+</details>
+
+9. As a user, I want to know my score at the end of the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game screen | Click the 'Next' button on the last question screen | The screen of the Game Score loads. | works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-9-a.jpg">
+<img src="./docs/user-story-testing/user-story-9-b.jpg">
+</details>
+
+10. As a user, I want to know the high scores of the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Score screen | Click the 'High Scores' button  | The screen of the High Scores loads. | works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-10-a.jpg">
+<img src="./docs/user-story-testing/user-story-10-b.jpg">
+</details>
+
+11. As a user, I want to go to the feedback page to send my feedback to the site owner 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start screen | click the 'Contact' link on the nav bar| A Contact page loads | Works as expected | 
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-11-a.jpg">
+<img src="./docs/user-story-testing/user-story-11-b.jpg">
+</details>
+
+12. As a user, I want to send my feedback to the site owner and see the confirmation that my feedback was sent
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact page Form Screen | Fill out the contact form and click the submit button | A thank you message is displayed | Works as expected | 
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-12-a.jpg">
+<img src="./docs/user-story-testing/user-story-12-b.jpg">
+</details>
+
+13. As a site owner, I want users to be able to contact us or make suggestions for new phrases.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Start screen | click the 'Contact' link on the nav bar| A Contact page loads | Works as expected | 
+
+<details><summary>Screenshots</summary>
+<img src="./docs/user-story-testing/user-story-11-a.jpg">
+<img src="./docs/user-story-testing/user-story-11-b.jpg">
+</details>
+
+
