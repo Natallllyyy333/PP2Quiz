@@ -862,6 +862,7 @@ a.contact:hover {
 }
 
 .error404-container a {
+    display: inline-block;
     font-size: 24px;
     color: #c40094;
     text-decoration: none;
