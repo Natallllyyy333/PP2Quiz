@@ -1,7 +1,7 @@
 let questionsPsychology = [
     {
         numb: 1,
-        question: "Example of a psychological phenomenon??",
+        question: "Example of a psychological phenomenon?",
         answer: "B. The placebo effect",
         options: [
             "A. Photosynthesis",
@@ -28,7 +28,7 @@ let questionsPsychology = [
     {
         numb: 3,
         question: "Classical conditioning is learning by/through..? ",
-        answer:"B. Learning by associating two stimuli together",
+        answer:"B. Two stimuli together",
         options: [
              "A. Rewards and punishments",
             "B. Two stimuli together",
