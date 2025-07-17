@@ -103,7 +103,7 @@ The page is structured in a user-friendly and easy-to-learn way. Upon arriving a
     - one that is shown after the user presses the button High Scores to see the 3 latest best results of the game
 - A contact form
 - A form confirmation view
-<!-- - A 404 page -->
+- A 404 page
 
 ### Wireframes
 
@@ -128,9 +128,9 @@ The page is structured in a user-friendly and easy-to-learn way. Upon arriving a
 <details><summary>Form confirmation screen</summary>
 <img src="./docs/wireframes/form_confirmation_screen.png">
 </details>
-<!-- <details><summary>404 page</summary>
+<details><summary>404 page</summary>
 <img src="./docs/wireframes/404-page.png">
-</details> -->
+</details>
 
 ## Technologies Used
 
@@ -255,12 +255,12 @@ The site consists of two pages and nine features
 <img src="./docs/features/feature-form-confirmation.jpg">
 </details>
 
-<!-- ### 404 message
+### 404 message
 - Provides the user with a way to return to the game after clicking on a broken link
 
 <details><summary>404 message</summary>
-<img src="docs/features/feature-404.jpg">
-</details> -->
+<img src="./docs/features/feature-404.jpg">
+</details>
 
 ## Validation
 
@@ -272,9 +272,9 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 <details><summary>Contact Us</summary>
 <img src="./docs/validation/html-validation-contact.jpg">
 </details>
-<!-- <details><summary>404</summary>
-<img src="docs/validation/html-validation-404.jpg">
-</details> -->
+<details><summary>404</summary>
+<img src="./docs/validation/html-validation-404.jpg">
+</details>
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. When validating the page as a whole, the validator shows some errors linked to Bootstrap v5.0. When validating just my custom CSS it passes with no errors.
@@ -313,9 +313,9 @@ The WAVE WebAIM web accessibility evaluation tool was used to ensure the website
 <details><summary>Contact</summary>
 <img src="./docs/validation/accessibility-evaluation-contact_page.jpg">
 </details>
-<!-- <details><summary>404</summary>
+<details><summary>404</summary>
 <img src="./docs/validation/accessibility-evaluation-404.jpg">
-</details> -->
+</details>
 
 ### Performance 
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
