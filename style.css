@@ -18,6 +18,11 @@ body {
     /* padding: 24px; */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 ::-webkit-scrollbar {
     display: none !important;
     width: 0 !important;
@@ -860,6 +865,41 @@ a.contact:hover {
 
 .submit-btn:hover .fa-paper-plane {
     transform: translateX(5px);
+}
+
+.error404-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error404-container h1 {
+    font-size: 100px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.error404-container a {
+    font-size: 24px;
+    color: #c40094;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #c40094;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.error404-container a:hover {
+    background: #c40094;
+    color: #fff;
+    box-shadow: 0 0 10px #c40094;
 }
 
 @media screen and (max-width: 1280px) {

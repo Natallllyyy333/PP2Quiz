@@ -169,13 +169,23 @@ The site consists of two pages and nine features
 <img src="./docs/features/feature_heading_.jpg">
 </details>
 
+- User story covered: 13
+
 ### Start screen
 - Provides an option to choose between three different game subjects.
-- Allows a user to choose a username and enter it in the game.
-- User story covered: 1
+- Allows a user to create a username and enter it in the game.
+- User story covered: 1, 2
 
 <details><summary>Start screen</summary>
 <img src="./docs/features/feature-start-screen.jpg">
+</details>
+
+### Quide screen
+- Provides an option to read the Guide of the Game.
+- User story covered: 3, 5
+
+<details><summary>Quide screen</summary>
+<img src="./docs/features/feature_guide.jpg">
 </details>
 
 ### Game screen
@@ -188,8 +198,8 @@ The site consists of two pages and nine features
     - Answer number of total number of questions
     - A button "Next" to go to the next question
 
-    - User stories covered: 4
-    - User stories covered: 2, 3
+    - User stories covered: 4, 6, 7, 8, 9
+    
 
 <details><summary>Game screen</summary>
 <img src="docs/features/feature-game-screen.jpg">
@@ -203,7 +213,7 @@ The site consists of two pages and nine features
     - A section with the username and the total score and the h-score  
     - A button section with buttons "High Scores" to go to the High Scores Screen, a button "Try Again" - to start the same quiz with the same user name again and a button "Go To Home" to go bac to the Start Screen
 
-    - User stories covered: 4
+    - User stories covered: 9
 
 <details><summary>Game Score</summary>
 <img src="./docs/features/feature_score.jpg">
@@ -215,9 +225,9 @@ The site consists of two pages and nine features
     - A section with three latest playes, their the scores in the descending order, date and time of their games
     - Button "Back to score" to go back to the user's score
 
-- User story covered: 5
+- User story covered: 10
 
-<details><summary>Correct Guess screen</summary>
+<details><summary>High Scores screen</summary>
 <img src="./docs/features/feature-high-scores-screen.jpg">
 </details>
 
@@ -229,7 +239,8 @@ The site consists of two pages and nine features
     - An input section for a user to enter their email
     - An area input section for a user to enter their feedback
     - Button "Send Message" 
-- User story covered 7 
+
+- User story covered 11, 12, 13
 
 <details><summary>Contact Form</summary>
 <img src="./docs/features/feature-contact-form.jpg">
@@ -237,7 +248,8 @@ The site consists of two pages and nine features
 
 ### Form confirmation
 - Provides the user with feedback after the form has been submitted 
-- User story covered: 6
+
+- User story covered: 13
 
 <details><summary>Form confirmation</summary>
 <img src="./docs/features/feature-form-confirmation.jpg">
@@ -358,6 +370,7 @@ The website was tested on the following browsers:
 <img src="./docs/user-story-testing/user-story-2-a.jpg">
 <img src="./docs/user-story-testing/user-story-2-b.jpg">
 </details>
+
 3. As a user, I want to be able to read the quide for the game before playing
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -379,6 +392,7 @@ The website was tested on the following browsers:
 <img src="./docs/user-story-testing/user-story-3-b.jpg">
 <img src="./docs/user-story-testing/user-story-3-c.jpg">
 </details>
+
 5. As a user, I want to be able to exit before the start of the game back to the Start Screen
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -476,4 +490,55 @@ The website was tested on the following browsers:
 <img src="./docs/user-story-testing/user-story-11-b.jpg">
 </details>
 
+## Bugs
 
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| User's name and email aren't sent via the contact form to website owner's email| Add 'document.getElementById('form').addEventListener('submit', function(event) {})' function |
+| The start screen, the game screen and the score screen is moved up, down, right and left with scrolling, sliding and arrow, pageUp/pageDown buttons on the keyboard | add  e.preventDefault(), e.stopPropagation() for 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+    'PageUp', 'PageDown', 'Home', 'End', 'Space' |
+| The contact page has overflow on smaller screen sizes | Change padding and margin sizes for smaller screens |
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left-hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automatically you will ses a ribbon on the top saying: "Your site is published at https://natallllyyy333.github.io/PP2Quiz/
+
+You can fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in the upper right hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
+
+### EmailJS API
+1. Create an account at emailjs.com
+2. Add new email service, make note of the contact_service id
+3. Add a new email template, make note of the contact_form id
+4. Go the the integration dashboard, make note of your user id
+5. Load the EmailJS SDK in the head of your HTML file
+6. In JavaScript create a function that listens to a submit event and then initializes the SDK with your user id (emailjs.init('YOUR_USER_ID');) and submits the form (emailjs.sendForm('contact_service', 'contact_form', this);)
+
+## Credits
+All images, save the background image were created by the developer.
+
+### Media
+- [background image]('assets/images/background.jpg'): <a href='https://www.pexels.com/photo/purple-bokeh-220072/'>Purple Bokeh created by @Pixabay - https://www.pexels.com/</a>
+
+### Code
+- Crown pictograms were used from font-awesome/6.7.2/css/all.min.css
+- For Email sending JavaScript Api code was used script from https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js
+- Email sending JavaScript API code was written with the help of the official EmailJS tutorial https://www.emailjs.com/docs/tutorial/creating-contact-form/
+
+## Acknowledgments
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his feedback, advice, guidance and support.
+- My family for his support, advice, help with testing, and for giving me some kids free time to work on my project.

@@ -8,9 +8,6 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
-// const hiName = document.querySelector('.hiName');
-
-
 const username = document.getElementById('username');
  const btnSaveName = document.querySelector('.btnSaveName');
 
