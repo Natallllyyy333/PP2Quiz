@@ -14,8 +14,7 @@
 body {
     color: #fff;
     background: #09001d;
-    /* scroll-behavior: none; */
-    /* padding: 24px; */
+
 }
 
 a {
@@ -68,7 +67,7 @@ a {
 
 .main {
     min-height: 100vh;
-    background: url('./images/output_50.webp') no-repeat center center/cover;
+    background: url('../images/output_50.webp') no-repeat center center/cover;
     pointer-events: auto;
     transition: .3s ease;
 }
@@ -85,19 +84,16 @@ a {
 }
 
 .home {
-    /* height: 100vh; */
+
     position: relative;
     left: -50%;
-
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
+
     width: 100%;
     height: 100%;
-
-    /* overflow: hidden; */
 
 }
 
@@ -165,7 +161,6 @@ h2 {
     align-items: center;
     margin: 1.5em;
 
-
 }
 
 .quizChoice h2 {
@@ -180,7 +175,6 @@ h2 {
     font-size: 20px;
     font-weight: 600;
     padding: 1em 2em;
-    /* min-width: 6em; */
     width: 10em;
     border: 2px solid #fff;
     ;
@@ -188,9 +182,7 @@ h2 {
     border-radius: 8px;
     margin-left: 4px;
     transition: .3s ease;
-    /* text-align: center; */
     cursor: pointer;
-
 }
 
 .quizChoice .btnpickQuiz:hover {
@@ -250,11 +242,7 @@ h2 {
 
 .enterYourName.blue_large {
     color: blue;
-    /* font-size: 28px;
-    font-weight: 800;
-    font-style: bold;
-    text-shadow: 3px 3px 3px #fff;
-    transition: .3s ease; */
+
 }
 
 .home-content #username {
@@ -367,7 +355,6 @@ h2 {
 .quiz-section {
     position: relative;
     left: -50%;
-    /* left: 0; */
     width: 100%;
     background: #09001d;
     display: flex;
@@ -376,13 +363,10 @@ h2 {
     z-index: 100;
     transition: .8s ease-in-out;
 
-
 }
 
 .quiz-section.active {
     left: 0;
-    /* background: #09001d;
-     z-index: 100;  */
 }
 
 .quiz-section .quiz-box {
@@ -418,7 +402,7 @@ h2 {
     text-align: center;
     background: linear-gradient(45deg, transparent, #c40094, transparent);
     border-radius: 6px;
-    ;
+
 }
 
 .quiz-box .quiz-header {
@@ -438,7 +422,6 @@ h2 {
 .quiz-header .header-score {
     background: #c40094;
     border-radius: 3px;
-    /* padding: 7px; */
 }
 
 .quiz-box .question-text {
@@ -476,13 +459,11 @@ h2 {
 .option-list .option.correct::after {
     content: '';
     position: absolute;
-
     right: 10px;
 }
 
 .check {
     position: absolute;
-
     right: 10px;
 }
 
@@ -580,7 +561,6 @@ h2 {
 
 .result-box .percentage-container {
     width: 300px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -701,9 +681,6 @@ h2 {
     top: -100%;
     background: #340148;
     font-size: 10px;
-    /* width: 200%;
-    height: 100%;
-    left: 200%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -717,7 +694,6 @@ h2 {
 }
 
 .highScores.active {
-    /* top: 3%; */
     top: 0;
     color: #fff;
     z-index: 1000;
@@ -924,9 +900,7 @@ a.contact:hover {
         margin-top: 1em;
     }
 
-    /* .home-content h2.enterYourName {
-        font-size: 24px;
-    } */
+
 
     .home-content p {
         font-size: 14px;
@@ -965,7 +939,7 @@ a.contact:hover {
     .quiz-section .quiz-box {
         width: 700px;
         padding: 5px 30px;
-        /* gap: 2em; */
+
     }
 
     .quiz-header span {
@@ -980,17 +954,17 @@ a.contact:hover {
     }
 
     .quiz-box h1 {
-        /* font-size: 18px; */
+
         font-size: 1em;
     }
 
     .quiz-box .question-text {
-        /* font-size: 18px; */
+
         font-size: 1em;
     }
 
     .option-list {
-        /* font-size: 12px; */
+
         font-size: 1em;
     }
 
@@ -1013,10 +987,6 @@ a.contact:hover {
     }
 
     .quiz-footer .next-btn {
-        /* width: 80px;
-        height: 35px;
-        font-size: 14px; */
-
 
         width: 4em;
         height: 2em;
@@ -1062,10 +1032,7 @@ a.contact:hover {
 
     }
 
-    /* .contact-form {
 
-        gap: 0.5rem;
-    } */
 
     .contact-form-container {
         max-width: 704px;
@@ -1101,7 +1068,7 @@ a.contact:hover {
 
     .option-list {
         padding: 15px;
-        /* font-size: 2em; */
+
     }
 
     .quiz-box .quiz-header {
@@ -1110,7 +1077,7 @@ a.contact:hover {
 
     .quiz-header span {
         font-size: 17px;
-        /* padding: 10px; */
+
     }
 
     div.quiz-box div.option-list div.option span {
@@ -1185,12 +1152,7 @@ a.contact:hover {
 }
 
 @media screen and (max-width: 992px) {
-    /* .main {
-        min-height: 100vh;
-        background: url('./images/output_60.webp') no-repeat center center/cover;
-        pointer-events: auto;
-        transition: .3s ease;
-    } */
+
 
     .header {
         width: 100%;
@@ -1229,86 +1191,13 @@ a.contact:hover {
 
 }
 
-/* @media screen and (max-width: 992px) {
-    .header {
-        width: 50%;
-        padding: 50px 7%;
-    }
 
-    .home-content {
-        max-width: 100%;
-        height: 70%;
-    }
-
-    .home-content h1 {
-        font-size: 120px;
-
-    }
-
-    .home-content p {
-        font-size: 30px;
-        margin-bottom: 40px;
-    }
-
-    .saveYourName {
-        padding: 50px;
-    }
-
-    .home-content h2.enterYourName {
-        font-size: 45px;
-    }
-
-    /* .home-content h2 {
-        font-size: 35px;
-        margin-bottom: 45px;
-    } */
-/* .yourQuiz .choice_title {
-        margin-bottom: 45px;
-    }
-
-    .home-content h2.enterYourName.violet_large,
-    .choice_title.violet_large,
-    .home-content h2.enterYourName.red_large {
-        font-size: 53px;
-    }
-
-    .home-content #username {
-        width: 380px;
-        height: 70px;
-
-        margin: 45px 25px 40px;
-    }
-
-    .home-content .btnSaveName {
-        width: 160px;
-        height: 71px;
-        font-size: 26px;
-
-    }
-
-    .quizChoice {
-        margin-bottom: 0;
-    }
-
-    .quizChoice .btnpickQuiz {
-        font-size: 26px;
-        margin-bottom: 0;
-    }
-
-    .home-content .start-btn {
-        font-size: 50px;
-        width: 500px;
-        height: 200px;
-        padding: 25px;
-
-    } */
-/* } */
 
 @media screen and (max-width: 768px) {
 
     .main {
         min-height: 100vh;
-        background: url('./images/output_40.webp') no-repeat center center/cover;
+        background: url('../images/output_40.webp') no-repeat center center/cover;
         pointer-events: auto;
         transition: .3s ease;
     }
@@ -1344,10 +1233,7 @@ a.contact:hover {
         margin-bottom: 0;
     }
 
-    /* .home-content h2.enterYourName.violet_large,
-    .choice_title.violet_large {
-        font-size: 40px;
-    } */
+
 
     .home-content .saveYourName #username {
         width: 376px;
@@ -1408,7 +1294,7 @@ a.contact:hover {
 
     .main {
         min-height: 100vh;
-        background: url('./images/output_35.webp') no-repeat center center/cover;
+        background: url('../images/output_35.webp') no-repeat center center/cover;
         pointer-events: auto;
         transition: .3s ease;
     }
@@ -1437,20 +1323,7 @@ a.contact:hover {
         letter-spacing: normal;
     }
 
-    /* 
-    .home-content h2.enterYourName.violet_large,
-    .choice_title.violet_large,
-    .home-content h2.enterYourName.red_large {
-        font-size: 25px;
-    } */
 
-    /* .home-content h2.enterYourName.red_large {
-        color: red;
-    } */
-
-    /* .home-content .saveYourName .enterYourName {
-        font-size: 22px;
-    } */
 
     .home-content .saveYourName #username {
         width: 160px;
@@ -1500,17 +1373,7 @@ a.contact:hover {
         font-weight: 600;
     }
 
-    /* .option-list .option {
-        padding: 0px;
-        font-size: 1em;
-    } */
 
-    /* .quiz-box .option-list .option span {
-
-        font-size: 17px;
-        padding: 5px;
-
-    } */
 
     .quiz-section .result-box {
 
@@ -1520,7 +1383,7 @@ a.contact:hover {
     .popup-info {
 
         width: 330px;
-        /* padding: 10px; */
+
     }
 
     .home-content p {
@@ -1596,8 +1459,7 @@ a.contact:hover {
         position: fixed;
         top: 0;
         left: 0;
-        /* width: 100%;
-    padding: 20px 10%; */
+
         background: transparent;
         display: flex;
         justify-content: space-between;
@@ -1636,8 +1498,6 @@ a.contact:hover {
     position: fixed;
     top: 0;
     left: 0;
-    /* width: 100%;
-    padding: 20px 10%; */
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -1660,7 +1520,3 @@ input[type="submit"] {
 #form {
     margin-top: 2rem;
 }
-
-/* .contact-body {
-    font-size: 15px;
-} */

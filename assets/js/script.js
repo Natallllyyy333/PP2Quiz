@@ -14,37 +14,23 @@ const username = document.getElementById('username');
   const saveYourName = document.querySelector('.saveYourName');
   let enterYourName = document.querySelector('.enterYourName');
   const quizChoice = document.querySelector('.quizChoice');
-  // const yourChoice = document.querySelector('.yourChoice');
-  const choiceTitle = document.querySelector('.choice_title');
-  // const bigger = document.getElementsByClassName('bigger');
-  const quizTitle = document.getElementsByClassName('quizTitle');
-  // let uname = document.querySelector('.uname');
   
-//   const highScoresNavbarLink = document.querySelector('.highScoresNavbarLink');
+  const choiceTitle = document.querySelector('.choice_title');
+  
+  const quizTitle = document.getElementsByClassName('quizTitle');
+  
 let currentQuestions = [];
 let quizTitleText = '';
 const quizTitleElement = document.querySelector('.quizTitle');
 
-// const physicsBtn = document.getElementById('physics');
-// const psychologyBtn = document.getElementById('psychology');
+
 const itBtn = document.getElementById('IT');
-// const home = document.getElementsByClassName('home');
+
 
 window.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
 window.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
 
-// const blockScroll = (e) => {
-//   e.preventDefault();
-//   e.stopPropagation();
-//   return false;
-// };
 
-// All possible events of scrolling
-// ['wheel', 'scroll', 'touchmove', 'keydown'].forEach(event => {
-//   window.addEventListener(event, blockScroll, { passive: false });
-// });
-
-// disabling of arrows and PageUp/Down keys 
 document.addEventListener('keydown', (e) => {
   const navigationKeys = [
     'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
@@ -60,20 +46,15 @@ document.addEventListener('keydown', (e) => {
 
 document.getElementById('physics').addEventListener('click', function() {
   currentQuestions = questionsPhysics;
-//   yourChoice.innerHTML = `<h2>Your Physics Quiz is ready for you!</h2>
-//   `
-//   startQuiz();
+
  quizTitleText = "Physics Quiz";
   updateQuizTitle();
 quizChoice.innerHTML = `<h2 class = 'bigger'>Physics Quiz is ready for you!</h2>`;
   choiceTitle.innerHTML = '';
 });
-// document.body.style.overflow = "hidden";
+
 document.getElementById('IT').addEventListener('click', function() {
-  currentQuestions = questionsIT; // Ваш оригинальный набор IT-вопросов
-//   startQuiz();
-//  yourChoice.innerHTML = `<h2>Your IT Quiz is ready for you!</h2>
-//   `
+  currentQuestions = questionsIT; 
 quizTitleText =  `Basics of IT`;
 updateQuizTitle();
 quizChoice.innerHTML = `<h2 class = 'bigger'>IT Quiz is ready for you!</h2>;`;
@@ -81,9 +62,7 @@ choiceTitle.innerHTML = '';
 });
 document.getElementById('psychology').addEventListener('click', function() {
   currentQuestions = questionsPsychology;
-//    yourQuiz.innerHTML = `<h2>Your Psychology Quiz is ready for you!</h2>
-//   `
-//   startQuiz();
+
 quizTitleText = "Psychology Quiz";
   updateQuizTitle();
 quizTitle.innerHTML = `<h1>Psychology Quiz</h1>`;
@@ -94,11 +73,7 @@ choiceTitle.innerHTML = '';
 function updateQuizTitle() {
   quizTitleElement.textContent = quizTitleText;
 }
-// document.querySelector('.quizChoice').addEventListener('click', function()
-//  {
-//     yourQuiz.innerHTML = `<h2>Your psychology Quiz is ready for you!</h2>
-//   `
-//  
+
 
 btnSaveName.onclick = () => {
    
@@ -107,9 +82,9 @@ btnSaveName.onclick = () => {
        
     }
    else{
-    // uname.innerHTML = `<div style="background: 'green'"><h2 class="enterYourName red">Enter your name below</h2></div>`;
+    
 enterYourName.classList.add('red');
-    // enterYourName.innerHTML = `<h2 class="enterYourName red">Enter your name below</h2> <br>`
+   
     
     }
 };
@@ -123,8 +98,7 @@ startBtn.onclick = () => {
       choiceTitle.classList.add('violet_large');
       enterYourName.classList.add('red_large');
     }
-    //  if( choiceTitle.innerHTML !== ''){
-    //     choiceTitle.classList.add('violet_large');
+    
        
 
      };
@@ -201,8 +175,7 @@ nextBtn.onclick = () => {
 
 
 const optionList = document.querySelector('.option-list');
-// const icon = document.getElementsByClassName('icon');
-//getting questions and options from array
+
 function showQuestions(index) {
     const questionText = document.querySelector(".question-text");
     
@@ -256,7 +229,7 @@ for (let i = 0; i < allOptions; i++){
   } 
     }
 
-    // if user has selected, disabled all options
+  
   for (let i = 0; i < allOptions; i++){
     optionList.children[i].classList.add('disabled');
   } 
@@ -309,16 +282,16 @@ function headerScore(){
 
         
  const STORAGE_KEY = 'savedItems';
- const MAX_RESULTS = 3; // Максимальное количество хранимых результатов
+ const MAX_RESULTS = 3; 
 
 const addBtn = document.getElementById('saveScoreBtn');
 const itemsList = document.getElementById('highScoresList');
  const highScores = document.querySelector('.highScores');
  const result = document.querySelector('.result');
 
-// Обработчик клика
+
 addBtn.addEventListener('click', function(event) {
-  event.preventDefault(); // Предотвращаем отправку формы, если кнопка в форме
+  event.preventDefault(); 
   
   
   highScores.classList.add('active');
@@ -327,9 +300,9 @@ addBtn.addEventListener('click', function(event) {
 });
 
 result.addEventListener('click', function(event) {
-  event.preventDefault(); // Предотвращаем отправку формы, если кнопка в форме
+  event.preventDefault(); 
   
-  // Правильное добавление класса
+  
   highScores.classList.remove('active');
   
  
@@ -343,7 +316,7 @@ result.addEventListener('click', function(event) {
 
 function loadItems() {
   const savedItems = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
- itemsList.innerHTML = ''; // Полная очистка перед обновлением
+ itemsList.innerHTML = ''; 
    savedItems.sort((a, b) => b.score - a.score);
 
   savedItems.slice(0, MAX_RESULTS).forEach(item => {
@@ -363,7 +336,7 @@ function saveHighScore() {
     date: new Date().toLocaleString()
   };
 
-  // Добавляем через loadItems для предотвращения дублирования
+  
   let savedItems = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
 
   savedItems.unshift(newItem); 
@@ -387,23 +360,8 @@ function addItemToPage(item) {
 
 }
 
-//contact
-// function SendMail(){
-//     var params ={
-//         from_name : document.getElementById("fullName").value,
-//         email_id : document.getElementById("email_id").value,
-//         message : document.getElementById("message").value
-//     }
-//     emailjs.send("service_oal2s54", "template_i19g79l", params).then(function(res){
-//         alert("Success! ", + res.status);
-//     })
-// }
-
-
-// Вешаем обработчики событий
-
 
 itBtn.addEventListener('click', () => {
-  startQuiz('general'); // Используем 'general' для IT-викторины
+  startQuiz('general'); 
 });
 
