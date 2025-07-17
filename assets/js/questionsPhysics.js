@@ -18,7 +18,7 @@ let questionsPhysics = [
         answer:"A. pulls objects to each other",
         options: [
             "A. pulls objects to each other",
-            "B. stored in objects",
+            "B. is stored in objects",
             "C. resists to motion",
             "D. measures the speed"
 
