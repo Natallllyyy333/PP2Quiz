@@ -325,11 +325,13 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="./docs/validation/performance-lighthouse-index_desktop.jpg">
 </details>
 <details><summary>Contact</summary>
-<img src="docs/validation/performance-lighthouse-contact.jpg">
+<img src="./docs/validation/performance-lighthouse-contact_mobile.jpg">
+<img src="./docs/validation/performance-lighthouse-contact_desktop.jpg">
 </details>
-<!-- <details><summary>404</summary>
-<img src="docs/validation/performance-lighthouse-404.jpg">
-</details> -->
+<details><summary>404</summary>
+<img src="./docs/validation/performance-lighthouse-404_mobile.jpg">
+<img src="./docs/validation/performance-lighthouse-404_desktop.jpg">
+</details>
 
 ### Performing tests on various devices 
 The website was tested on the following devices:
